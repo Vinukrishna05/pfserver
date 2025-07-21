@@ -14,7 +14,7 @@ server.use(router)
 server.use("/projectimage",express.static('./uploads'))
 
 
- const PORT=3000 || process.env.PORT//setting default port no and alternate port number from env
+ const PORT=process.env.PORT || 3000//setting default port no and alternate port number from env
  server.listen(PORT,()=>{
     console.log("server running at port",PORT);
  })
