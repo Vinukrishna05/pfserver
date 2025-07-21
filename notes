@@ -1,0 +1,19 @@
+express js steps
+
+create a folder
+open cmd
+initialise node - npm init -y
+generate node modules -npm i express
+create index.js
+
+environment variables and process
+=====================================
+In Node.js, environment variables are a mechanism to configure an application externally, allowing it to adapt to different environments without modifying the core code. They are key-value pairs stored outside the application, accessible through the process.env object. This is particularly useful for managing sensitive information like API keys, database credentials, or environment-specific settings. 
+
+In Node.js, the process object is a global object that provides information about, and control over, the current Node.js process. It is an instance of EventEmitter, meaning it can emit and listen for events. 
+
+Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.
+
+middleware 
+a special function that can act on requests even before it hits the server
+
